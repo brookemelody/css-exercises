@@ -5,6 +5,41 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* this combined with body's flex direction bring the Advertising banner to the bottom of the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* place logo, title, and input vertically rather than horizontally in flexbox */
+  gap: 16px; /* margin between elements in the flexbox */
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links, .right-links, .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.left-links, .right-links {
+  gap: 16px;
+}
+
+.buttons {
+  gap: 5px;
 }
 
 img {
@@ -16,6 +51,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px 8px 16px;
 }
 
 input {
@@ -23,4 +59,13 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+li {
+  list-style-type: none; /* Remove bullet points from li elements */
+}
+
+a {
+  color: #666;
+  text-decoration: none;
 }
