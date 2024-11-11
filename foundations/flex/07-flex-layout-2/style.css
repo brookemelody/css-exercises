@@ -27,3 +27,50 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none; /* remove bullet points */
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  font-weight: 1000;
+  font-size: 32px;
+  padding: 0px 0px 0px 16px; /* add padding to the left side */
+  align-items: center; /* center text along y axis */
+}
+
+.footer {
+  /* Center text in the middle of the div along both x and y axis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  flex-shrink: 0; /* do not shrink sidebar */
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 48px;
+}
+
+.card {
+  padding: 16px;
+  width: 300px; /* there can be 2 columns of cards */
+  height: 200px;
+}
